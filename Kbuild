@@ -8,5 +8,5 @@
 # @TAG(NICTA_BSD)
 #
 
-libs-$(CONFIG_LIB_SEL4_MUSLC_SYS) += libsel4muslcsys
+libs-$(CONFIG_LIB_PLAYGROUND_SYS) += libplaygroundsys
 libsel4muslcsys: libsel4 libmuslc libcpio libsel4vspace libsel4utils common

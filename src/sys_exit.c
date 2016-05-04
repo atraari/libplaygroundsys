@@ -17,7 +17,7 @@
 static void
 sel4_abort(void)
 {
-#if defined(CONFIG_DEBUG_BUILD) && defined(CONFIG_LIB_SEL4_MUSLC_SYS_DEBUG_HALT)
+#if defined(CONFIG_DEBUG_BUILD) && defined(CONFIG_LIB_PLAYGROUND_SYS_DEBUG_HALT)
     printf("seL4 root server abort()ed\n");
     seL4_DebugHalt();
 #endif

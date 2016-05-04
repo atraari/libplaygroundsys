@@ -25,7 +25,7 @@
 #include <sel4utils/mapping.h>
 
 /* If we have a nonzero static morecore then we are just doing dodgy hacky morecore */
-#if CONFIG_LIB_SEL4_MUSLC_SYS_MORECORE_BYTES > 0
+#if CONFIG_LIB_PLAYGROUND_SYS_MORECORE_BYTES > 0
 
 /*
  * Statically allocated morecore area.
@@ -33,7 +33,7 @@
  * This is rather terrible, but is the simplest option without a
  * huge amount of infrastructure.
  */
-char morecore_area[CONFIG_LIB_SEL4_MUSLC_SYS_MORECORE_BYTES];
+char morecore_area[CONFIG_LIB_PLAYGROUND_SYS_MORECORE_BYTES];
 
 /* Pointer to free space in the morecore area. */
 static uintptr_t morecore_base = (uintptr_t) &morecore_area;
