@@ -9,14 +9,14 @@
 #
 
 menuconfig LIB_PLAYGROUND_SYS
-    bool "Minimal muslc syscall"
+    bool "Playground syscall"
     default y
     depends on LIB_SEL4 && LIB_MUSL_C && LIB_SEL4_UTILS && LIB_SEL4_VSPACE && LIB_CPIO
     help
         Fork of minimal muslc syscall implementation for seL4 modified to suit playgroundOS.
 
 config LIB_PLAYGROUND_BYTES
-    int "Malloc limit"
+    int "Playground malloc limit"
     default 1048576
     depends on LIB_PLAYGROUND_SYS
     help
