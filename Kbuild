@@ -9,4 +9,4 @@
 #
 
 libs-$(CONFIG_LIB_PLAYGROUND_SYS) += libplaygroundsys
-libsel4muslcsys: libsel4 libmuslc libcpio libsel4vspace libsel4utils common
+libplaygroundsys: libsel4 libmuslc libcpio libsel4vspace libsel4utils common
